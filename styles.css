@@ -1,0 +1,63 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    padding: 20px;
+}
+
+.rectangle {
+    width: 100px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    color: white;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    /*animation: fadeIn 1s ease-in-out forwards;*/
+}
+
+.red{
+    background-color: red;
+    order: 1;
+}
+.orange {
+    background-color: orange;
+    order: 2;
+}
+.yellow{
+    background-color: yellow;
+    color: black;
+    order: 3;
+}
+.green{
+    background-color: green;
+    order: 4;
+}
+.blue{
+    background-color: blue;
+    order: 5;
+}
+.indigo{
+    background-color: indigo;
+    order: 6;
+}
+.violet{
+    background-color: violet;
+    order: 7;
+}
+
+/*@keyframes fadeIn {*/
+/*    from{*/
+/*        opacity: 0; transform: translateY(20px);*/
+/*    }*/
+/*    to {*/
+/*        opacity: 1; transform: translateY(0)*/
+/*    }*/
+/*}*/
+.rectangle:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
